@@ -8,3 +8,11 @@ INSERT INTO cars (brand, model, year)
 VALUES ('Ford', 'Mustang', 1964);
 
 SELECT * FROM cars;
+
+
+
+SELECT *
+FROM Cinema
+WHERE id % 2 <> 0 
+  AND description <> 'boring'
+ORDER BY rating DESC;
