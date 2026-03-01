@@ -21,3 +21,9 @@ WHERE department = 'Engineering';
 UPDATE employees 
 SET salary = salary * 1.10 
 WHERE department = 'Marketing';
+
+
+SELECT first_name, last_name, salary
+FROM Employees
+WHERE department = 'Sales' 
+  AND salary > 50000;
