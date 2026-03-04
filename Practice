@@ -27,3 +27,14 @@ SELECT first_name, last_name, salary
 FROM Employees
 WHERE department = 'Sales' 
   AND salary > 50000;
+
+
+SELECT 
+    category, 
+    SUM(price * quantity) AS total_revenue,
+    COUNT(order_id) AS sale_count
+FROM sales_table
+GROUP BY category
+HAVING COUNT(order_id) > 5
+ORDER BY total_revenue DESC
+LIMIT 1;
