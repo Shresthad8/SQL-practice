@@ -38,3 +38,9 @@ GROUP BY category
 HAVING COUNT(order_id) > 5
 ORDER BY total_revenue DESC
 LIMIT 1;
+
+
+
+SELECT emp_id, name, dept_id, salary
+FROM employees
+WHERE dept_id = 2 AND salary >= 60000;
