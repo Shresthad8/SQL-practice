@@ -73,3 +73,16 @@ INSERT INTO TeamMembers (id, name, role, salary, join_date) VALUES
 (3, 'Charlie Brown', 'Developer', 90000, '2023-01-05'),
 (4, 'Dana White', 'Manager', 110000, '2020-11-20'),
 (5, 'Eli Vance', 'Designer', 68000, '2022-08-12');
+
+
+
+
+SELECT 
+    category, 
+    SUM(price * quantity) AS total_revenue,
+    COUNT(order_id) AS sale_count
+FROM sales_table
+GROUP BY category
+HAVING COUNT(order_id) > 5
+ORDER BY total_revenue DESC
+LIMIT 1;
