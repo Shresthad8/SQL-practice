@@ -104,3 +104,21 @@ WHERE department = 'Engineering';
 UPDATE employees 
 SET salary = salary * 1.10 
 WHERE department = 'Marketing';
+
+
+INSERT INTO employees (id, name, department, salary, hire_date)
+VALUES 
+(1, 'Alice Johnson', 'Engineering', 85000, '2022-03-15'),
+(2, 'Bob Smith', 'Marketing', 60000, '2021-11-02'),
+(3, 'Charlie Brown', 'Engineering', 90000, '2020-01-20');
+
+-- Get all employees in the Engineering department
+SELECT name, salary 
+FROM employees 
+WHERE department = 'Engineering';
+
+-- Give a raise to everyone in Marketing
+UPDATE employees 
+SET salary = salary * 1.10 
+WHERE department = 'Marketing';
+
