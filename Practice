@@ -22,6 +22,13 @@ UPDATE employees
 SET salary = salary * 1.10 
 WHERE department = 'Marketing';
 
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
 
 SELECT first_name, last_name, salary
 FROM Employees
