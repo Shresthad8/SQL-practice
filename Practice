@@ -169,6 +169,14 @@ CREATE TABLE employees (
     hire_date DATE
 );
 
+CREATE TABLE employees (
+    id INT PRIMARY KEY,
+    name VARCHAR(100),
+    department VARCHAR(50),
+    salary DECIMAL(10, 2),
+    hire_date DATE
+);
+
 INSERT INTO employees (id, name, department, salary, hire_date)
 VALUES 
 (1, 'Alice Johnson', 'Engineering', 85000, '2022-03-15'),
