@@ -17,6 +17,11 @@ SELECT name, salary
 FROM employees 
 WHERE department = 'Engineering';
 
+-- Give a raise to everyone in Marketing
+UPDATE employees 
+SET salary = salary * 1.10 
+WHERE department = 'Marketing';
+
 CREATE TABLE employees (
     id INT PRIMARY KEY,
     name VARCHAR(100),
